@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 // Core SVG noise generation logic
 const generateRawSvg = (type, freqX, freqY, octaves, stitch) => {
@@ -75,8 +74,73 @@ function App() {
       <div className="spec-sheet">
         {/* Hero */}
         <section className="header">
-          <h1 className="title">SVG Noise Generator</h1>
+          <h1 className="title">Online SVG Noise Generator</h1>
           <p className="subtitle">Local-first texture synthesis for digital product design</p>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="seo-content">
+          <h2>How to Generate SVG Noise Textures</h2>
+          <div className="steps">
+            <div className="step">
+              <span className="step-number">1</span>
+              <p className="step-text">Select your noise type (Fractal or Turbulence) to determine the texture pattern</p>
+            </div>
+            <div className="step">
+              <span className="step-number">2</span>
+              <p className="step-text">Adjust base frequency X and Y values to control noise scale and density</p>
+            </div>
+            <div className="step">
+              <span className="step-number">3</span>
+              <p className="step-text">Set octaves, stitch tiles, and opacity, then export as CSS, SVG, or Data URI</p>
+            </div>
+          </div>
+
+          <h2>Key Features of Our SVG Noise Generator</h2>
+          <ul className="features">
+            <li><strong>Fractal & Turbulence Patterns:</strong> Choose between smooth fractal noise or chaotic turbulence for different visual effects</li>
+            <li><strong>Real-time Preview:</strong> See your texture changes instantly in the sandbox before exporting</li>
+            <li><strong>Multiple Export Formats:</strong> Get CSS background code, raw SVG, or data URI for immediate use</li>
+            <li><strong>Privacy-First Design:</strong> All processing happens locally in your browser - no data leaves your device</li>
+            <li><strong>No Installation Required:</strong> Works directly in your browser with no software to download</li>
+            <li><strong>Customizable Parameters:</strong> Fine-tune frequency, octaves, stitching, and opacity for perfect results</li>
+          </ul>
+
+          <h2>Frequently Asked Questions</h2>
+          <div className="faq">
+            <div className="faq-item">
+              <h3>Is this SVG noise generator free?</h3>
+              <p>Yes, our SVG noise generator is 100% free to use online with no registration required.</p>
+            </div>
+            <div className="faq-item">
+              <h3>Is my data private and secure?</h3>
+              <p>Absolutely. All noise generation happens locally in your browser. We do not store, transmit, or process your data on any server.</p>
+            </div>
+            <div className="faq-item">
+              <h3>Can I use the generated textures commercially?</h3>
+              <p>Yes, you retain full rights to all SVG noise patterns and textures you generate using our tool for any purpose.</p>
+            </div>
+            <div className="faq-item">
+              <h3>What file formats can I export?</h3>
+              <p>You can export your noise textures as raw SVG code, CSS background strings, or data URIs for immediate use in web projects.</p>
+            </div>
+          </div>
+
+          <h2>Code Examples</h2>
+          <div className="code-examples">
+            <div className="code-example">
+              <h3>Before: Plain Background</h3>
+              <pre><code>background-color: #FFFFFF;</code></pre>
+            </div>
+            <div className="code-example">
+              <h3>After: SVG Noise Texture</h3>
+              <pre><code>background-image: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'&gt;&lt;filter id='grain'&gt;&lt;feTurbulence type='fractalNoise' baseFrequency='0.65 0.65' numOctaves='3' stitchTiles='stitch'/&gt;&lt;/filter&gt;&lt;rect width='100%' height='100%' filter='url(#grain)'/&gt;&lt;/svg&gt;");
+opacity: 0.08;</code></pre>
+            </div>
+          </div>
+
+          <h2>Use Cases for SVG Noise Textures</h2>
+          <p>Digital designers and developers use SVG noise textures to add subtle grain and texture to websites, applications, and digital products. These textures can create depth, visual interest, and a premium feel without adding significant file size. Common applications include background overlays, image filters, UI element styling, and creating vintage or industrial design aesthetics. The SVG format ensures crisp rendering at any scale while maintaining small file sizes for optimal performance.</p>
         </section>
 
         {/* Main Workspace */}
