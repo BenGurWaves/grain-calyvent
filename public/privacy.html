@@ -3,40 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>Privacy Policy — Grain</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Helvetica Neue', 'Univers', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #EAE8E3;
+      background: 
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0, 0, 0, 0.03) 2px,
+          rgba(0, 0, 0, 0.03) 4px
+        ),
+        linear-gradient(
+          135deg,
+          #E5E3DE 0%,
+          #EAE8E3 50%,
+          #E5E3DE 100%
+        );
       color: #1A1A1A;
       line-height: 1.6;
       padding: 40px 20px;
+      min-height: 100vh;
     }
     .container {
       max-width: 700px;
       margin: 0 auto;
-      background: #FFFFFF;
-      border: 2px solid #A8A6A1;
+      background: linear-gradient(135deg, #3A3A3A 0%, #2A2A2A 50%, #3A3A3A 100%);
+      border: 3px solid #1A1A1A;
       padding: 40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: 
+        inset 0 2px 4px rgba(0, 0, 0, 0.3),
+        0 6px 12px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+    }
+    .container::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 6px;
+      height: 6px;
+      background: #5A5A5A;
+      border-radius: 50%;
+      box-shadow: 
+        inset 0 1px 2px rgba(0, 0, 0, 0.6),
+        0 1px 0 rgba(255, 255, 255, 0.1);
     }
     h1 {
       font-size: 28px;
       margin-bottom: 24px;
-      color: #1A1A1A;
+      color: #EAE8E3;
       letter-spacing: -0.02em;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
     h2 {
       font-size: 18px;
       margin: 24px 0 12px;
-      color: #1A1A1A;
+      color: #EAE8E3;
       letter-spacing: -0.01em;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
     p {
       margin-bottom: 16px;
-      color: #1A1A1A;
-      opacity: 0.85;
+      color: #EAE8E3;
+      opacity: 0.9;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
     a {
       color: #E07A2B;
@@ -48,12 +93,16 @@
     .back {
       display: inline-block;
       margin-bottom: 20px;
-      color: #1A1A1A;
+      color: #EAE8E3;
       text-decoration: none;
       font-weight: 500;
       font-family: 'IBM Plex Mono', 'Courier New', ui-monospace, 'SF Mono', Menlo, monospace;
       font-size: 11px;
       letter-spacing: 0.05em;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .back:hover {
+      color: #E07A2B;
     }
   </style>
 </head>
