@@ -282,6 +282,10 @@ function App() {
         {/* Footer */}
         <footer className="attribution">
           <span>VELOCITY.CALYVENT.COM // LOCAL ARCHIVE SYSTEM // CALYVENT.COM</span>
+          <span className="footer-links">
+            <a href="/privacy.html">PRIVACY</a>
+            {' · '}<a href="/terms.html">TERMS</a>
+          </span>
         </footer>
       </div>
     </div>
